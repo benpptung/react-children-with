@@ -1,0 +1,26 @@
+{
+  "name": "react-children-with",
+  "description": "return React children with new props merged in shadowly",
+  "version": "1.0.0",
+  "author": "Ben P.P. Tung",
+  "bugs": {
+    "url": "https://github.com/benpptung/react-children-with/issues"
+  },
+  "homepage": "https://github.com/benpptung/react-children-with#readme",
+  "keywords": [
+    "react",
+    "utility"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/benpptung/react-children-with.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "react": "^15.5.4"
+  }
+}
