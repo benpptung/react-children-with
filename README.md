@@ -25,9 +25,7 @@ var children = merge(this.props.children, new_props);
 
 ```
 
-or
-
-Instead of
+or Instead of
 ```
 var children = React.Children.map(this.props.children, child=> {
   return [Apple, Orange].indexOf(child.type) >= 0 ? 
