@@ -35,10 +35,10 @@ var children = React.Children.map(this.props.children, child=> {
   
   return types.indexOf(child.type) >= 0 ? React.cloneElement(child, new_props) : child;
 })
+```
 
 just write
 ```
 var types = [Apple, Orange];
 var children = merge(this.props.children, new_props, types);
-
 ```
