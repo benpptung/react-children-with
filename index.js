@@ -17,7 +17,7 @@ function merge (children, props, type, deep) {
   var has_prop = false;
   var p;
   for ( p in props) {
-    if (props.hasOwnProperty(p) && typeof props[p] !== 'undefined') {
+    if (props.hasOwnProperty(p) && typeof props[p] !== 'undefined' && p !== 'children') {
       _props[p] = props[p];
       has_prop = true;
     }
