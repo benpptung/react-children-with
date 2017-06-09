@@ -30,10 +30,12 @@ function merge (children, props, type, deep) {
 
     return React.Children.map(children, child=> {
 
+      if (!child.props) return child;
+
       let __props = _props;
       let new_children = null;
 
-      if (child.props && React.Children.count(child.props.children) > 0 && deep === true) {
+      if (React.Children.count(child.props.children) > 0 && deep === true) {
         new_children = {children: mergeProps(child.props.children) };
         __props = Object.assign({}, _props, new_children );
       }
