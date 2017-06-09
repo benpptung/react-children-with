@@ -1,6 +1,6 @@
 'use strict';
 
-const React = require('react');
+var React = require('react');
 
 /**
  *
@@ -15,7 +15,8 @@ function merge (children, props, type, deep) {
 
   var _props = {};
   var has_prop = false;
-  for (let p in props) {
+  var p;
+  for ( p in props) {
     if (props.hasOwnProperty(p) && typeof props[p] !== 'undefined') {
       _props[p] = props[p];
       has_prop = true;
@@ -28,12 +29,12 @@ function merge (children, props, type, deep) {
   return mergeProps(children);
   function mergeProps(children) {
 
-    return React.Children.map(children, child=> {
+    return React.Children.map(children, function(child) {
 
       if (!child.props) return child;
 
-      let __props = _props;
-      let new_children = null;
+      var __props = _props;
+      var new_children = null;
 
       if (React.Children.count(child.props.children) > 0 && deep === true) {
         new_children = {children: mergeProps(child.props.children) };

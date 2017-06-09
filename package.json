@@ -1,15 +1,13 @@
 {
   "name": "react-children-with",
   "description": "return React children with new props merged in shadowly",
-  "version": "1.1.0",
-  "browserify": {
-    "transform": [
-      "transforms"
-    ]
-  },
+  "version": "1.1.1",
   "author": "Ben P.P. Tung",
   "bugs": {
     "url": "https://github.com/benpptung/react-children-with/issues"
+  },
+  "dependencies": {
+    "react": "^15.5.4"
   },
   "homepage": "https://github.com/benpptung/react-children-with#readme",
   "keywords": [
@@ -24,9 +22,5 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "dependencies": {
-    "react": "^15.5.4",
-    "transforms": "^0.1.2"
   }
 }
