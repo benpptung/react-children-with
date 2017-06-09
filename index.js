@@ -38,6 +38,7 @@ function merge (children, props, type, deep) {
         __props = Object.assign({}, _props, new_children );
       }
 
+      // skip html dom, but still merge props to its children
       if (typeof child.type == 'string') return new_children ? React.cloneElement(child, new_children) : child;
 
       // if type is a constructor
