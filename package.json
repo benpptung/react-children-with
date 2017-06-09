@@ -1,7 +1,7 @@
 {
   "name": "react-children-with",
   "description": "return React children with new props merged in shadowly",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "browserify": {
     "transform": [
       "transforms"
