@@ -1,7 +1,7 @@
 {
   "name": "react-children-with",
   "description": "return React children with new props merged in shadowly",
-  "version": "1.1.2",
+  "version": "1.1.3",
   "author": "Ben P.P. Tung",
   "bugs": {
     "url": "https://github.com/benpptung/react-children-with/issues"

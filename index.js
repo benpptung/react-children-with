@@ -31,7 +31,7 @@ function merge (children, props, type, deep) {
 
     return React.Children.map(children, function(child) {
 
-      if (!child.props) return child;
+      if (!child || !child.props) return child;
 
       var __props = _props;
       var new_children = null;
